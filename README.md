@@ -1,55 +1,77 @@
-# BridgeAI 
+# BridgeAI 🌉
 
 ### Making complex information simple, accessible, and understandable.
 
-BridgeAI is an AI-powered accessibility assistant that transforms complicated information into clear, human-friendly explanations.
+## Inspiration
 
-From legal documents to technical information, BridgeAI helps users understand difficult content by adapting explanations for different audiences.
+Important information is often hidden behind complicated language.
 
----
+Legal documents, medical instructions, government notices, and technical information can become difficult for many people to understand.
 
-##  Features
-
-- AI-powered text simplification
--  Audience-based explanations
--  Support for complex documents
--  Modern cybercore/glassmorphism interface
--  Fast AI-powered responses
--  Designed with accessibility in mind
+BridgeAI was created to help people access information by transforming complex content into simple, human-friendly explanations.
 
 ---
 
-##  How It Works
+## What it does
 
-1. User provides complex information.
-2. BridgeAI analyzes the content using Google's Gemini AI.
-3. The AI restructures the information into:
-   - Simple explanation
-   - Key points
-   - Important actions
+BridgeAI uses Generative AI to simplify complicated information based on the user's needs.
+
+Users can:
+- Paste complex text
+- Select their target audience
+- Receive a simplified explanation
+- Understand key points and important actions
+
+Future versions will support:
+- PDF uploads
+- Image/document processing
+- OCR extraction
+- Accessibility-focused formatting
 
 ---
 
-##  Tech Stack
+## How it works
 
-**Frontend**
+1. User enters complicated information
+2. User selects their audience
+3. BridgeAI creates a custom prompt
+4. Gemini AI generates an accessible explanation
+5. The simplified output is displayed
+
+---
+
+## Tech Stack
+
+### Frontend
 - HTML
 - CSS
 - JavaScript
 
-**Backend**
+### Backend
 - Python
 - Flask
 
-**AI**
+### AI
 - Google Gemini API
 
-**Libraries**
-- python-dotenv
-- Markdown
-- Pillow
-- PyPDF
+### Tools
+- Git
+- GitHub
 
 ---
 
-## 📂 Project Structure
+## Features
+
+✨ AI-powered simplification  
+✨ Audience-based explanations  
+✨ Accessibility-focused design  
+✨ Modern glassmorphism interface  
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_LINK
