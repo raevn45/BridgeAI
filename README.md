@@ -1,4 +1,4 @@
-# BridgeAI 🌉✨
+# BridgeAI 
 
 ### Making complex information simple, accessible, and understandable.
 
@@ -8,18 +8,18 @@ From legal documents to technical information, BridgeAI helps users understand d
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🤖 AI-powered text simplification
-- 🧠 Audience-based explanations
-- 📄 Support for complex documents
-- 🎨 Modern cybercore/glassmorphism interface
-- ⚡ Fast AI-powered responses
-- ♿ Designed with accessibility in mind
+- AI-powered text simplification
+-  Audience-based explanations
+-  Support for complex documents
+-  Modern cybercore/glassmorphism interface
+-  Fast AI-powered responses
+-  Designed with accessibility in mind
 
 ---
 
-## 💡 How It Works
+##  How It Works
 
 1. User provides complex information.
 2. BridgeAI analyzes the content using Google's Gemini AI.
@@ -30,7 +30,7 @@ From legal documents to technical information, BridgeAI helps users understand d
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Frontend**
 - HTML
