@@ -1,4 +1,4 @@
-# BridgeAI 🌉
+# BridgeAI 
 
 ### Making complex information simple, accessible, and understandable.
 
