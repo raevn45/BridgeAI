@@ -47,7 +47,7 @@ def home():
 
             filename = uploaded_file.filename.lower()
 
-            # PDF
+            # ---------- PDF ----------
             if filename.endswith(".pdf"):
 
                 reader = PdfReader(uploaded_file)
@@ -59,7 +59,7 @@ def home():
 
                 content += "\n\n" + pdf_text
 
-            # IMAGE
+            # ---------- IMAGE ----------
             elif filename.endswith((".png", ".jpg", ".jpeg")):
 
                 image = Image.open(uploaded_file)
@@ -100,7 +100,7 @@ Provide:
 <p>Please upload a PDF, image, or paste text first.</p>
 """
 
-        # ---------- TEXT/PDF ----------
+        # ---------- TEXT / PDF ----------
         else:
 
             prompt = f"""
@@ -140,6 +140,6 @@ Information:
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
-        port=5000,
+        port=int(os.environ.get("PORT", 5000)),
         debug=True
     )
