@@ -62,10 +62,10 @@ Future versions will support:
 
 ## Features
 
-✨ AI-powered simplification  
-✨ Audience-based explanations  
-✨ Accessibility-focused design  
-✨ Modern glassmorphism interface  
+AI-powered simplification  
+Audience-based explanations  
+Accessibility-focused design  
+Modern glassmorphism interface  
 
 ---
 
