@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<title>
+BridgeAI
+</title>
+
+
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="background"></div>
+
+
+
+<main class="container">
+
+
+
+<section class="hero">
+
+
+<h1>
+Bridge<span>AI</span>
+</h1>
+
+
+<p>
+Making complex information simple, accessible, and understandable.
+</p>
+
+
+</section>
+
+
+
+
+
+<section class="workspace">
+
+
+
+
+
+<form method="POST"
+enctype="multipart/form-data">
+
+
+<div class="input-area">
+
+
+<h2>
+Drop information into the bridge.
+</h2>
+
+
+
+<textarea
+
+name="text"
+
+placeholder="Paste complex text, instructions, medical information, legal documents, or any difficult content here..."
+
+></textarea>
+
+
+
+
+
+<div class="upload-box">
+
+
+<label>
+Upload PDF or Image
+</label>
+
+
+<input
+
+type="file"
+
+name="file"
+
+accept=".pdf,.png,.jpg,.jpeg"
+
+>
+
+
+</div>
+
+
+
+
+
+
+<div class="options">
+
+
+<label>
+Audience
+</label>
+
+
+<select name="audience">
+
+
+<option>
+General public
+</option>
+
+
+<option>
+Student
+</option>
+
+
+<option>
+Elderly person
+</option>
+
+
+<option>
+Patient
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+<button>
+
+✦ Simplify with AI
+
+</button>
+
+
+
+
+</div>
+
+
+
+</form>
+
+
+
+
+
+
+
+<div class="result-area">
+
+
+<h2>
+Simplified Version
+</h2>
+
+
+
+
+<div class="result">
+
+
+{% if result %}
+
+
+{{ result | safe }}
+
+
+{% else %}
+
+
+Your simplified explanation will appear here.
+
+
+{% endif %}
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="future">
+
+<p>
+
+Supports:
+PDF • Images • Complex Documents
+
+</p>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+
+</html>
