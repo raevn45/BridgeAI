@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import html
 from google import genai
 from dotenv import load_dotenv
 import os
@@ -14,9 +15,14 @@ load_dotenv()
 app = Flask(__name__)
 
 
-client = genai.Client(
-    api_key=os.getenv("GEMINI_API_KEY")
-)
+def get_client():
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY is not configured")
+    return genai.Client(api_key=api_key)
+
+
+app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024
 
 
 
@@ -33,7 +39,7 @@ def generate_ai_response(contents):
 
         try:
 
-            response = client.models.generate_content(
+            response = get_client().models.generate_content(
                 model=model,
                 contents=contents
             )
@@ -196,9 +202,7 @@ Provide:
 
 
 
-                result = markdown.markdown(
-                    ai_text
-                )
+                result = markdown.markdown(html.escape(ai_text))
 
 
                 return render_template(
@@ -261,9 +265,7 @@ Information:
             )
 
 
-            result = markdown.markdown(
-                ai_text
-            )
+            result = markdown.markdown(html.escape(ai_text))
 
 
 
